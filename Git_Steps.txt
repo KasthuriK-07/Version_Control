@@ -1,0 +1,28 @@
+1.Git Version
+	git --version
+2.Create branch
+	git init -b main
+3.Configuration with username and email
+	git config --global user.name "anu"
+	git config --global user.email "anu@gmail.com"
+4.Create new dir
+	mkdir git_project
+5.Change dir
+	cd git_project
+6.Create new python file inside git project
+	Add some code
+7.Add file to git
+	git add sample.py
+8.Save file
+	git commit -m "Details"
+9.Make some changes in sample.py file
+10.Check history
+	git log
+11.Again add the file to git
+	git add sample.py
+12.Commit file
+	git commit -m "Data Added"
+13.See the latest changes in commit
+	git log --oneline
+	git show HEAD
+Escape from git log use keyboard shortcut ESC q enter
