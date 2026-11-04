@@ -1,0 +1,161 @@
+1.Git Version
+	git --version
+2.Create branch
+	git init -b main
+3.Configuration with username and email
+	git config --global user.name "anu"
+	git config --global user.email "anu@gmail.com"
+4.Create new dir
+	mkdir git_project
+5.Change dir
+	cd git_project
+6.Create new python file inside git project
+	Add some code
+7.Add file to git
+	git add sample.py
+8.Save file
+	git commit -m "Details"
+9.Make some changes in sample.py file
+10.Check history
+	git log
+11.Again add the file to git
+	git add sample.py
+12.Commit file
+	git commit -m "Data Added"
+13.See the latest changes in commit
+	git log --oneline
+	git show HEAD
+Escape from git log use keyboard shortcut ESC q enter
+
+Day-2
+
+14.Create New account in git Hub
+	Create new repository
+	Copy that repo link
+
+15.Using echo we can create new file
+
+	echo "This is my file" >> content.txt
+	echo "This is git project" >>file.txt
+16.Add multiple files 
+	git add .
+17.Commit
+	git commit -m "Add multiple Files"
+
+18.Push the data to GitHub
+	git remote add origin "YOUR_GITHUB_LINK"
+19.Check git is connected or not
+	git remote -v
+20.Check the status
+	git status
+	Status should clean
+21.git push -u origin main
+	to push the data in GitHub
+22.paste the link in browser to check files added or not
+
+23.Create and switch branch
+	git checkout -b branch_1
+24.Add new file using echo
+	Branch file can't access by main branch
+	Main branch file can access
+	Within Branch also can't access
+25.git tag
+	Check the version
+26.Add version
+	git tag -a version1.0 -m "Version 1 add file and saved"
+
+27.Push branch file to GitHub
+	git push -u origin branch_1
+
+28.git push -u origin version1.0 
+
+	-Add tags 
+
+
+
+Day-3
+
+29.Switch Branch
+	git switch login
+
+30.Create and Switch
+	git switch -c payment
+
+31.Delete a branch
+	git branch -d login
+
+32.Add payment.py file
+	git add payment.py
+
+33.Commit the file
+	git commit -m "Payment Details"
+
+34.Check History
+	git log
+
+35.Reset Commit
+	git reset --soft HEAD~1
+
+36.git reset --hard HEAD~1 -Discard the changes in staging area
+
+37.Payment File got deleted
+
+38.git log --oneline
+
+39.Restore the file
+	git reflog --oneline
+        Copy that commit id for ur payment file
+
+40.git restore --source=commitid -- payment.py
+
+41.List out the file ur payment file present
+	ls
+
+42.Open git bash
+	git pull
+
+43.ls
+
+44.Switch to main branch
+	git checkout main
+
+
+45.Merge the files
+	git merge anu 
+
+46.git tag -a v1.3  -m "Merge Branch anu in main branch"
+
+47.Pushing new branch to GitHub
+	git push origin renu
+
+48.Pushing tags
+	git push origin --tags
+
+49.Git Clone
+	git clone "github_link"
+50.Git fetch
+	git fetch origin
+
+51.git pull origin main
+git pull origin main --allow-unrelated-histories
+
+
+52.Team Collaborators
+	Go to git_demo
+	Settings
+		Colaborators Verify with mail
+	Aft u will get Colaborators and Team
+		Add people to collaborator
+	Send Invite
+	If they accept both can access both the git repo
+	
+
+53.Open git bash in any drive
+	give
+		git status
+	Initialize git repo
+		git init -b main
+	Then clone that GitHub acc copy that link
+	git clone "https://github.com/KasthuriK-07/git_repo.git"
+
+	Check any folder git_repo
